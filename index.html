@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Favorite Programming Language Survey Form</h1>
+    <p id="description">Identify the favorite Programming Language of visitors</p>
+    <form id="survey-form">
+      
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name" id="name-label"/></label>
+        <label id="email-label">E-Mail<input id="email" type="email" required placeholder="Enter your e-mail" id="email-label"/></label>
+        <label id="number-label" >Age (optional)<input id="number" type="number" min="18" max="120" placeholder="Age" id="number-label"/></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select your gender.</legend>
+          <select id="dropdown">
+            <option value="">Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Others</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recommend my page to a friend?</legend>
+           <label><input type="radio" class="inline" name="recommend" value="yes-radio">yes </input></label>
+           <label><input type="radio" class="inline"  name="recommend" value="no-radio">no</input></label>
+           <label><input type="radio" class="inline"  name="recommend" value="not-sure-radio">not sure</input></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select your favorite programming languages (check all that apply)</legend>
+            <label for="java"><input type="checkbox" id="java" value="java">Java</input></label>
+            <label for="javascript"><input type="checkbox" id="javascript" value="javascript">Javascript</input></label>
+            <label for="html"><input type="checkbox" id="html" value="html">HTML</input></label>
+            <label for="css"><input type="checkbox" id="css" value="css">CSS</input></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comment">Enter your suggestions:
+          <textarea id="comment" placeholder="Enter your comment here..." rows=3 cols=30> </textarea>
+        </label>
+        <label>
+      </fieldset>
+          <input type="submit" id="submit" value="submit"></input>
+        </label>
+    </form>
+  </body>
+
+</html>
